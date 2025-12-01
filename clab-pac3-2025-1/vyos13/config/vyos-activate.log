@@ -13,3 +13,28 @@ calling /usr/libexec/vyos/activate/20-ethernet_offload.py
 calling /usr/libexec/vyos/activate/20-ethernet_offload.py
 calling /usr/libexec/vyos/activate/20-ethernet_offload.py
 calling /usr/libexec/vyos/activate/20-ethernet_offload.py
+calling /usr/libexec/vyos/activate/20-ethernet_offload.py
+calling /usr/libexec/vyos/activate/20-ethernet_offload.py
+calling /usr/libexec/vyos/activate/20-ethernet_offload.py
+calling /usr/libexec/vyos/activate/20-ethernet_offload.py
+calling /usr/libexec/vyos/activate/20-ethernet_offload.py
+config-activation error in /usr/libexec/vyos/activate/20-ethernet_offload.py: Error in /usr/libexec/vyos/activate/20-ethernet_offload.py: Interface "eth3" does not exist!
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/vyos/compose_config.py", line 56, in apply_func
+    func(self.config_tree)
+  File "/usr/libexec/vyos/activate/20-ethernet_offload.py", line 34, in activate
+    eth = Ethtool(ifname)
+          ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/vyos/ethtool.py", line 69, in __init__
+    raise ValueError(f'Interface "{ifname}" does not exist!')
+ValueError: Interface "eth3" does not exist!
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/vyos/compose_config.py", line 73, in apply_file
+    self.apply_func(func)
+  File "/usr/lib/python3/dist-packages/vyos/compose_config.py", line 60, in apply_func
+    raise ComposeConfigError(e) from e
+vyos.compose_config.ComposeConfigError: Interface "eth3" does not exist!
+

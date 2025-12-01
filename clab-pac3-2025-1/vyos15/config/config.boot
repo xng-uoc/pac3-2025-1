@@ -17,7 +17,7 @@ interfaces {
     }
     ethernet eth0 {
         address "172.20.20.45/24"
-        address "3fff:172:20:20::6/64"
+        address "3fff:172:20:20::2/64"
         description "Management Interface"
     }
     ethernet eth1 {
@@ -27,10 +27,6 @@ interfaces {
     ethernet eth2 {
         ipv6 {
         }
-    }
-    ethernet eth3 {
-    }
-    ethernet eth4 {
     }
     loopback lo {
         address "15.15.15.15/32"

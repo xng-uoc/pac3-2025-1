@@ -11,22 +11,10 @@ all:
           ansible_host: 172.20.20.11
         clab-pac3-2025-1-host12:
           ansible_host: 172.20.20.12
-        clab-pac3-2025-1-host13:
-          ansible_host: 172.20.20.13
-        clab-pac3-2025-1-host14:
-          ansible_host: 172.20.20.14
-        clab-pac3-2025-1-host15:
-          ansible_host: 172.20.20.15
         clab-pac3-2025-1-host21:
           ansible_host: 172.20.20.21
         clab-pac3-2025-1-host22:
           ansible_host: 172.20.20.22
-        clab-pac3-2025-1-host23:
-          ansible_host: 172.20.20.23
-        clab-pac3-2025-1-host24:
-          ansible_host: 172.20.20.24
-        clab-pac3-2025-1-host25:
-          ansible_host: 172.20.20.25
         clab-pac3-2025-1-ssh:
           ansible_host: 172.20.20.100
     vyosnetworks_vyos:

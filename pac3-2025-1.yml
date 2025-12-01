@@ -55,24 +55,6 @@ topology:
       mgmt-ipv4: 172.20.20.12
       labels:
         graph-icon: host
-    host13:
-      kind: linux
-      image: ghcr.io/peretuset/alpine:latest
-      mgmt-ipv4: 172.20.20.13
-      labels:
-        graph-icon: host
-    host14:
-      kind: linux
-      image: ghcr.io/peretuset/alpine:latest
-      mgmt-ipv4: 172.20.20.14
-      labels:
-        graph-icon: host
-    host15:
-      kind: linux
-      image: ghcr.io/peretuset/alpine:latest
-      mgmt-ipv4: 172.20.20.15
-      labels:
-        graph-icon: host
     host21:
       kind: linux
       image: ghcr.io/peretuset/alpine:latest
@@ -83,24 +65,6 @@ topology:
       kind: linux
       image: ghcr.io/peretuset/alpine:latest
       mgmt-ipv4: 172.20.20.22
-      labels:
-        graph-icon: host
-    host23:
-      kind: linux
-      image: ghcr.io/peretuset/alpine:latest
-      mgmt-ipv4: 172.20.20.23
-      labels:
-        graph-icon: host
-    host24:
-      kind: linux
-      image: ghcr.io/peretuset/alpine:latest
-      mgmt-ipv4: 172.20.20.24
-      labels:
-        graph-icon: host
-    host25:
-      kind: linux
-      image: ghcr.io/peretuset/alpine:latest
-      mgmt-ipv4: 172.20.20.25
       labels:
         graph-icon: host
     ssh:
@@ -133,9 +97,3 @@ topology:
     - endpoints: ["vyos11:eth4", "host21:eth1"]
     - endpoints: ["vyos12:eth3", "host12:eth1"]
     - endpoints: ["vyos12:eth4", "host22:eth1"]
-    - endpoints: ["vyos13:eth3", "host13:eth1"]
-    - endpoints: ["vyos13:eth4", "host23:eth1"]
-    - endpoints: ["vyos14:eth3", "host14:eth1"]
-    - endpoints: ["vyos14:eth4", "host24:eth1"]
-    - endpoints: ["vyos15:eth3", "host15:eth1"]
-    - endpoints: ["vyos15:eth4", "host25:eth1"]
